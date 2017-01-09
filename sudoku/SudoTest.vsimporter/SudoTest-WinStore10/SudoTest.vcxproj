@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SudoTest</ProjectName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10586.0</WindowsTargetPlatformMinVersion>
+    <Keyword>IslandwoodProj</Keyword>
+    <ProjectGuid>{AFD5481C-772F-48DB-B583-F9BC416BBB27}</ProjectGuid>
+    <RootNamespace>SudoTest</RootNamespace>
+    <WINOBJC_SDK_ROOT Condition="'$(WINOBJC_SDK_ROOT)' == ''">C:\Users\naray\Downloads\winobjc</WINOBJC_SDK_ROOT>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <TargetName>SudoTest</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <TargetName>SudoTest</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <Optimize>true</Optimize>
+    <TargetName>SudoTest</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <Optimize>true</Optimize>
+    <TargetName>SudoTest</TargetName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(WINOBJC_SDK_ROOT)\msvc\starboard.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>SudoTest_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>D095ED4071F7A0D93085697ECF15F78E76342CCF</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <ClangCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExcludedSearchPathSubdirectories>*.nib;*.lproj;*.framework;*.gch;(*);.DS_Store;CVS;.svn;.git;.hg;*.xcodeproj;*.xcode;*.pbproj;*.pbxproj;*.xcassets</ExcludedSearchPathSubdirectories>
+      <HeaderMap>Project</HeaderMap>
+      <IncludePaths>$(SolutionPublicHeadersDir)</IncludePaths>
+      <OptimizationLevel>Disabled</OptimizationLevel>
+      <PrefixHeader>..\..\SudoTest\SudoTest-Prefix.pch</PrefixHeader>
+      <PreprocessorDefinitions>DEBUG=1</PreprocessorDefinitions>
+    </ClangCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies);CoreGraphics.lib;Foundation.lib;MessageUI.lib;UIKit.lib</AdditionalDependencies>
+    </Link>
+    <SBInfoPlistCopy>
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </SBInfoPlistCopy>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <ClangCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExcludedSearchPathSubdirectories>*.nib;*.lproj;*.framework;*.gch;(*);.DS_Store;CVS;.svn;.git;.hg;*.xcodeproj;*.xcode;*.pbproj;*.pbxproj;*.xcassets</ExcludedSearchPathSubdirectories>
+      <HeaderMap>Project</HeaderMap>
+      <IncludePaths>$(SolutionPublicHeadersDir)</IncludePaths>
+      <OptimizationLevel>Disabled</OptimizationLevel>
+      <PrefixHeader>..\..\SudoTest\SudoTest-Prefix.pch</PrefixHeader>
+      <PreprocessorDefinitions>DEBUG=1</PreprocessorDefinitions>
+    </ClangCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies);CoreGraphics.lib;Foundation.lib;MessageUI.lib;UIKit.lib</AdditionalDependencies>
+    </Link>
+    <SBInfoPlistCopy>
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </SBInfoPlistCopy>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+    <ClangCompile>
+      <ExcludedSearchPathSubdirectories>*.nib;*.lproj;*.framework;*.gch;(*);.DS_Store;CVS;.svn;.git;.hg;*.xcodeproj;*.xcode;*.pbproj;*.pbxproj;*.xcassets</ExcludedSearchPathSubdirectories>
+      <HeaderMap>Project</HeaderMap>
+      <IncludePaths>$(SolutionPublicHeadersDir)</IncludePaths>
+      <OptimizationLevel>MinSpace</OptimizationLevel>
+      <OtherCFlags>-DNS_BLOCK_ASSERTIONS=1</OtherCFlags>
+      <OtherCPlusPlusFlags>-DNS_BLOCK_ASSERTIONS=1</OtherCPlusPlusFlags>
+      <PrefixHeader>..\..\SudoTest\SudoTest-Prefix.pch</PrefixHeader>
+    </ClangCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies);CoreGraphics.lib;Foundation.lib;MessageUI.lib;UIKit.lib</AdditionalDependencies>
+    </Link>
+    <SBInfoPlistCopy>
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </SBInfoPlistCopy>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+    <ClangCompile>
+      <ExcludedSearchPathSubdirectories>*.nib;*.lproj;*.framework;*.gch;(*);.DS_Store;CVS;.svn;.git;.hg;*.xcodeproj;*.xcode;*.pbproj;*.pbxproj;*.xcassets</ExcludedSearchPathSubdirectories>
+      <HeaderMap>Project</HeaderMap>
+      <IncludePaths>$(SolutionPublicHeadersDir)</IncludePaths>
+      <OptimizationLevel>MinSpace</OptimizationLevel>
+      <OtherCFlags>-DNS_BLOCK_ASSERTIONS=1</OtherCFlags>
+      <OtherCPlusPlusFlags>-DNS_BLOCK_ASSERTIONS=1</OtherCPlusPlusFlags>
+      <PrefixHeader>..\..\SudoTest\SudoTest-Prefix.pch</PrefixHeader>
+    </ClangCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies);CoreGraphics.lib;Foundation.lib;MessageUI.lib;UIKit.lib</AdditionalDependencies>
+    </Link>
+    <SBInfoPlistCopy>
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </SBInfoPlistCopy>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Xml Include="default.rd.xml" />
+    <None Include="SudoTest_TemporaryKey.pfx" />
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+    <ClInclude Include="..\..\ModeSelectViewController.h" />
+    <ClInclude Include="..\..\RecordItem.h" />
+    <ClInclude Include="..\..\RecordManager.h" />
+    <ClInclude Include="..\..\SudoTest\AboutViewViewController.h" />
+    <ClInclude Include="..\..\SudoTest\AppDelegate.h" />
+    <ClInclude Include="..\..\SudoTest\Cell.h" />
+    <ClInclude Include="..\..\SudoTest\Cell_Data.h" />
+    <ClInclude Include="..\..\SudoTest\FirstViewController.h" />
+    <ClInclude Include="..\..\SudoTest\GameViewController.h" />
+    <ClInclude Include="..\..\SudoTest\MoreViewController.h" />
+    <ClInclude Include="..\..\SudoTest\RankViewController.h" />
+    <ClInclude Include="..\..\SudoTest\SoundViewController.h" />
+    <ClInclude Include="..\..\SudoTest\SudoTest-Prefix.pch" />
+    <ClInclude Include="..\..\SudoTest\Sudoku.h" />
+    <ClInclude Include="..\..\SudoTest\global.h" />
+    <ClangCompile Include="..\..\ModeSelectViewController.m" />
+    <ClangCompile Include="..\..\RecordItem.m" />
+    <ClangCompile Include="..\..\RecordManager.m" />
+    <ClangCompile Include="..\..\SudoTest\AboutViewViewController.m" />
+    <ClangCompile Include="..\..\SudoTest\AppDelegate.m" />
+    <ClangCompile Include="..\..\SudoTest\Cell.m" />
+    <ClangCompile Include="..\..\SudoTest\Cell_Data.m" />
+    <ClangCompile Include="..\..\SudoTest\FirstViewController.m" />
+    <ClangCompile Include="..\..\SudoTest\GameViewController.m" />
+    <ClangCompile Include="..\..\SudoTest\MoreViewController.m" />
+    <ClangCompile Include="..\..\SudoTest\RankViewController.m" />
+    <ClangCompile Include="..\..\SudoTest\SoundViewController.m" />
+    <ClangCompile Include="..\..\SudoTest\Sudoku.m" />
+    <ClangCompile Include="..\..\SudoTest\global.c">
+      <CompileAs>CompileAsObjC</CompileAs>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\main.m" />
+    <DataModelCompile Include="..\..\Model.xcdatamodeld" />
+    <SBInfoPlistCopy Include="..\..\SudoTest\SudoTest-Info.plist">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release'">false</ExcludedFromBuild>
+      <VariableFile Condition="'$(Configuration)'=='Debug'">SudoTest-Debug-xcvars.txt</VariableFile>
+      <VariableFile Condition="'$(Configuration)'=='Release'">SudoTest-Release-xcvars.txt</VariableFile>
+    </SBInfoPlistCopy>
+    <SBResourceCopy Include="..\..\Pictures\Default@2x.png" />
+    <SBResourceCopy Include="..\..\Pictures\achiveback.png" />
+    <SBResourceCopy Include="..\..\Pictures\achivementbg.png" />
+    <SBResourceCopy Include="..\..\Pictures\demo-change.png" />
+    <SBResourceCopy Include="..\..\Pictures\demo.png" />
+    <SBResourceCopy Include="..\..\Pictures\game.png" />
+    <SBResourceCopy Include="..\..\Pictures\gamebg.png" />
+    <SBResourceCopy Include="..\..\Pictures\gameinputselect.png" />
+    <SBResourceCopy Include="..\..\Pictures\gameops.png" />
+    <SBResourceCopy Include="..\..\Pictures\home-but.png" />
+    <SBResourceCopy Include="..\..\Pictures\home-select.png" />
+    <SBResourceCopy Include="..\..\Pictures\homelevelselectbg.png" />
+    <SBResourceCopy Include="..\..\Pictures\homesetbg.png" />
+    <SBResourceCopy Include="..\..\Pictures\homgbg.png" />
+    <SBResourceCopy Include="..\..\Pictures\inbg.png" />
+    <SBResourceCopy Include="..\..\Pictures\information.png" />
+    <SBResourceCopy Include="..\..\Pictures\input-square.png" />
+    <SBResourceCopy Include="..\..\Pictures\input-square_ye.png" />
+    <SBResourceCopy Include="..\..\Pictures\levelselect-button.png" />
+    <SBResourceCopy Include="..\..\Pictures\modeselect-button.png" />
+    <SBResourceCopy Include="..\..\Pictures\modeselect.png" />
+    <SBResourceCopy Include="..\..\Pictures\options.png" />
+    <SBResourceCopy Include="..\..\Pictures\selection-button.png" />
+    <SBResourceCopy Include="..\..\Pictures\set-but.png" />
+    <SBResourceCopy Include="..\..\Pictures\set.png" />
+    <SBResourceCopy Include="..\..\Pictures\square.png" />
+    <SBResourceCopy Include="..\..\Pictures\submit.png" />
+    <SBResourceCopy Include="..\..\SudoTest\en.lproj\InfoPlist.strings">
+      <VariantDir>en.lproj</VariantDir>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\SudoTest\弹出.png" />
+    <SBResourceCopy Include="..\..\SudoTest\选项@2x.png" />
+    <Text Include="SudoTest-Debug-xcvars.txt">
+      <DeploymentContent>false</DeploymentContent>
+    </Text>
+    <Text Include="SudoTest-Release-xcvars.txt">
+      <DeploymentContent>false</DeploymentContent>
+    </Text>
+    <XibCompile Include="..\..\ModeSelectViewController.xib" />
+    <XibCompile Include="..\..\SudoTest\AboutViewViewController.xib" />
+    <XibCompile Include="..\..\SudoTest\FirstViewController.xib" />
+    <XibCompile Include="..\..\SudoTest\GameTopPanel.xib" />
+    <XibCompile Include="..\..\SudoTest\GameViewController.xib" />
+    <XibCompile Include="..\..\SudoTest\MoreViewController.xib" />
+    <XibCompile Include="..\..\SudoTest\RankViewController.xib" />
+    <XibCompile Include="..\..\SudoTest\SoundViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(WINOBJC_SDK_ROOT)\msvc\starboard.targets" />
+  </ImportGroup>
+</Project>

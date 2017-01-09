@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SudoTest", "SudoTest", "{F8C7E607-FCEE-483A-92B5-41510C8070FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SudoTest", "SudoTest.vsimporter\SudoTest-WinStore10\SudoTest.vcxproj", "{AFD5481C-772F-48DB-B583-F9BC416BBB27}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Debug|ARM.ActiveCfg = Debug|ARM
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Debug|ARM.Build.0 = Debug|ARM
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Debug|ARM.Deploy.0 = Debug|ARM
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Debug|Win32.Build.0 = Debug|Win32
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Debug|Win32.Deploy.0 = Debug|Win32
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Release|ARM.ActiveCfg = Release|ARM
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Release|ARM.Build.0 = Release|ARM
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Release|ARM.Deploy.0 = Release|ARM
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Release|Win32.ActiveCfg = Release|Win32
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Release|Win32.Build.0 = Release|Win32
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27}.Release|Win32.Deploy.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AFD5481C-772F-48DB-B583-F9BC416BBB27} = {F8C7E607-FCEE-483A-92B5-41510C8070FC}
+	EndGlobalSection
+EndGlobal

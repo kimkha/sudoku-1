@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{a0692110-bec0-4263-b032-efdc6cbf8949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{193957ac-eb67-4017-a33b-b16dd5533295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pictures">
+      <UniqueIdentifier>{B4AC9519-B782-400A-82B2-BE1AD292CC4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SudoTest">
+      <UniqueIdentifier>{52A4E21C-D09B-48F0-91B3-B83BBF289B1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SudoTest\Database">
+      <UniqueIdentifier>{87A4E66F-52BD-4D28-9F4E-05E386263B5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SudoTest\SudokuCreator">
+      <UniqueIdentifier>{9CCCE735-A923-4FC5-A1E4-4C13397C04A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SudoTest\Supporting Files">
+      <UniqueIdentifier>{26E202A5-6873-42DB-9544-4A7DF2A54479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SudoTest\Supporting Files\en">
+      <UniqueIdentifier>{1DEB647E-7887-4F37-887C-60058FA9597C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xcode Variable Files">
+      <UniqueIdentifier>{7CC9525C-59AB-47FF-9504-97FC11B6737D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="default.rd.xml" />
+    <AppxManifest Include="Package.appxmanifest" />
+    <None Include="SudoTest_TemporaryKey.pfx" />
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <ClInclude Include="..\..\ModeSelectViewController.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RecordItem.h">
+      <Filter>SudoTest\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RecordManager.h">
+      <Filter>SudoTest\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\AboutViewViewController.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\AppDelegate.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\Cell.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\Cell_Data.h">
+      <Filter>SudoTest\SudokuCreator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\FirstViewController.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\GameViewController.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\MoreViewController.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\RankViewController.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\SoundViewController.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\SudoTest-Prefix.pch" />
+    <ClInclude Include="..\..\SudoTest\Sudoku.h">
+      <Filter>SudoTest\SudokuCreator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SudoTest\global.h">
+      <Filter>SudoTest</Filter>
+    </ClInclude>
+    <ClangCompile Include="..\..\ModeSelectViewController.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\RecordItem.m">
+      <Filter>SudoTest\Database</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\RecordManager.m">
+      <Filter>SudoTest\Database</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\AboutViewViewController.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\AppDelegate.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\Cell.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\Cell_Data.m">
+      <Filter>SudoTest\SudokuCreator</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\FirstViewController.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\GameViewController.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\MoreViewController.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\RankViewController.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\SoundViewController.m">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\Sudoku.m">
+      <Filter>SudoTest\SudokuCreator</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\global.c">
+      <Filter>SudoTest</Filter>
+    </ClangCompile>
+    <ClangCompile Include="..\..\SudoTest\main.m">
+      <Filter>SudoTest\Supporting Files</Filter>
+    </ClangCompile>
+    <DataModelCompile Include="..\..\Model.xcdatamodeld" />
+    <SBInfoPlistCopy Include="..\..\SudoTest\SudoTest-Info.plist" />
+    <SBResourceCopy Include="..\..\Pictures\Default@2x.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\achiveback.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\achivementbg.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\demo-change.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\demo.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\game.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\gamebg.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\gameinputselect.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\gameops.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\home-but.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\home-select.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\homelevelselectbg.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\homesetbg.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\homgbg.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\inbg.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\information.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\input-square.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\input-square_ye.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\levelselect-button.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\modeselect-button.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\modeselect.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\options.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\selection-button.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\set-but.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\set.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\square.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\Pictures\submit.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\SudoTest\en.lproj\InfoPlist.strings">
+      <Filter>SudoTest\Supporting Files\en</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\SudoTest\弹出.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <SBResourceCopy Include="..\..\SudoTest\选项@2x.png">
+      <Filter>Pictures</Filter>
+    </SBResourceCopy>
+    <Text Include="SudoTest-Debug-xcvars.txt">
+      <Filter>Xcode Variable Files</Filter>
+    </Text>
+    <Text Include="SudoTest-Release-xcvars.txt">
+      <Filter>Xcode Variable Files</Filter>
+    </Text>
+    <XibCompile Include="..\..\ModeSelectViewController.xib">
+      <Filter>SudoTest</Filter>
+    </XibCompile>
+    <XibCompile Include="..\..\SudoTest\AboutViewViewController.xib">
+      <Filter>SudoTest</Filter>
+    </XibCompile>
+    <XibCompile Include="..\..\SudoTest\FirstViewController.xib">
+      <Filter>SudoTest</Filter>
+    </XibCompile>
+    <XibCompile Include="..\..\SudoTest\GameTopPanel.xib">
+      <Filter>SudoTest</Filter>
+    </XibCompile>
+    <XibCompile Include="..\..\SudoTest\GameViewController.xib">
+      <Filter>SudoTest</Filter>
+    </XibCompile>
+    <XibCompile Include="..\..\SudoTest\MoreViewController.xib">
+      <Filter>SudoTest</Filter>
+    </XibCompile>
+    <XibCompile Include="..\..\SudoTest\RankViewController.xib">
+      <Filter>SudoTest</Filter>
+    </XibCompile>
+    <XibCompile Include="..\..\SudoTest\SoundViewController.xib">
+      <Filter>SudoTest</Filter>
+    </XibCompile>
+  </ItemGroup>
+</Project>
